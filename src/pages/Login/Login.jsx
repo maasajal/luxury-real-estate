@@ -1,10 +1,28 @@
+import { useContext } from "react";
 import { FaGithub } from "react-icons/fa";
 import { FcGoogle } from "react-icons/fc";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { AuthContext } from "../../providers/AuthProvider";
 
 const Login = () => {
-  const handleLogin = () => {
-    console.log("clicked login");
+  const { logInUser } = useContext(AuthContext);
+  const navigate = useNavigate();
+  const handleLogin = (e) => {
+    e.preventDefault();
+    const form = new FormData(e.currentTarget);
+    const email = form.get("email");
+    const password = form.get("password");
+
+    logInUser(email, password)
+      .then((result) => {
+        const user = result.user;
+        console.log(user);
+        e.target.reset();
+        navigate("/");
+      })
+      .catch((error) => {
+        console.error(error);
+      });
   };
   return (
     <div className="hero bg-base-200 my-36">
@@ -45,10 +63,10 @@ const Login = () => {
           <div className="px-8 mb-6 flex flex-col justify-between gap-4">
             <h2 className="text-3xl font-semibold">Login with: </h2>
             <div className="btn btn-outline">
-                <FcGoogle className="text-" /> Google
+              <FcGoogle className="text-" /> Google
             </div>
             <div className="btn btn-outline">
-                <FaGithub className="text-" /> Github
+              <FaGithub className="text-" /> Github
             </div>
           </div>
           <div className="mb-5">

@@ -1,7 +1,15 @@
 import { Link, NavLink } from "react-router-dom";
 import userPhoto from "../../assets/user.png";
+import { useContext } from "react";
+import { AuthContext } from "../../providers/AuthProvider";
 
 const Header = () => {
+  const { user, logOut } = useContext(AuthContext);
+  const handleSignOut = () => {
+    logOut()
+      .then(() => console.log("LouOut"))
+      .catch((error) => console.error(error));
+  };
   const navLinks = [
     <>
       <li>
@@ -67,11 +75,23 @@ const Header = () => {
               className="btn btn-ghost btn-circle avatar"
             >
               <div className="w-10 rounded-full">
-                <img
-                  src={userPhoto}
-                  alt="Logged user photo"
-                  title="User Name..."
-                />
+                {user ? (
+                  <img
+                    src={!user.photoURL ? userPhoto : user.photoURL}
+                    alt="Logged user photo"
+                    title={
+                      !user.displayName
+                        ? "User Name not found!"
+                        : user.displayName
+                    }
+                  />
+                ) : (
+                  <img
+                    src={userPhoto}
+                    alt="Logged user photo"
+                    title="Not logged in..."
+                  />
+                )}
               </div>
             </div>
             <ul
@@ -88,12 +108,22 @@ const Header = () => {
               </li>
             </ul>
           </div>
-          <Link
-            to="/login"
-            className="btn bg-green-400 px-6 border-none uppercase"
-          >
-            Login
-          </Link>
+          {user ? (
+            <Link
+              to="/"
+              onClick={handleSignOut}
+              className="btn bg-green-400 px-6 border-none uppercase"
+            >
+              Sign Out
+            </Link>
+          ) : (
+            <Link
+              to="/login"
+              className="btn bg-green-400 px-6 border-none uppercase"
+            >
+              Login
+            </Link>
+          )}
         </div>
       </div>
     </div>
