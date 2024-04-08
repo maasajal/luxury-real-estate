@@ -2,7 +2,14 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        poppins: '"Poppins", sans-serif;',
+      },
+      fontFamily: {
+        bebasNeue: '"Bebas Neue", sans-serif;',
+      },
+    },
   },
   plugins: [require("daisyui")],
 };

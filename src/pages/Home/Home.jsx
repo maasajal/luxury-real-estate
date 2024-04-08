@@ -1,7 +1,7 @@
 const Home = () => {
   return (
     <div>
-      <h1 className="text-5xl font-bold">Luxury Home</h1>
+      {/* <h1 className="text-8xl font-bold font-bebasNeue">Luxury Home</h1> */}
     </div>
   );
 };
