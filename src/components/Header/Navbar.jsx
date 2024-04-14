@@ -3,7 +3,7 @@ import userPhoto from "../../assets/user.png";
 import { useContext } from "react";
 import { AuthContext } from "../../providers/AuthProvider";
 
-const Header = () => {
+const Navbar = () => {
   const { user, logOut } = useContext(AuthContext);
   const handleSignOut = () => {
     logOut()
@@ -89,7 +89,9 @@ const Header = () => {
                   <img
                     src={userPhoto}
                     alt="Logged user photo"
-                    title="Not logged in..."
+                    // title="Not logged in..."
+                    className="tooltip"
+                    data-tip="Not logged in..."
                   />
                 )}
               </div>
@@ -129,4 +131,4 @@ const Header = () => {
     </div>
   );
 };
-export default Header;
+export default Navbar;

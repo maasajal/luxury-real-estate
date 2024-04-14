@@ -1,12 +1,15 @@
 import { useContext } from "react";
 import { FaGithub } from "react-icons/fa";
 import { FcGoogle } from "react-icons/fc";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../providers/AuthProvider";
 
 const Login = () => {
-  const { logInUser } = useContext(AuthContext);
+  const { logInUser, signInWithGoogle, signInWithGithub } =
+    useContext(AuthContext);
+  const location = useLocation();
   const navigate = useNavigate();
+
   const handleLogin = (e) => {
     e.preventDefault();
     const form = new FormData(e.currentTarget);
@@ -18,12 +21,37 @@ const Login = () => {
         const user = result.user;
         console.log(user);
         e.target.reset();
-        navigate("/");
+        navigate(location?.state ? location.state : "/");
       })
       .catch((error) => {
         console.error(error);
       });
   };
+
+  const handleGoogleSignIn = () => {
+    signInWithGoogle()
+      .then((result) => {
+        const user = result.user;
+        console.log(user);
+        navigate(location?.state ? location.state : "/");
+      })
+      .catch((error) => {
+        console.error(error);
+      });
+  };
+
+  const handleGithubSignIn = () => {
+    signInWithGithub()
+      .then((result) => {
+        const user = result.user;
+        console.log(user);
+        navigate(location?.state ? location.state : "/");
+      })
+      .catch((error) => {
+        console.error(error);
+      });
+  };
+
   return (
     <div className="hero bg-base-200 my-36">
       <div className="hero-content flex-col">
@@ -62,12 +90,12 @@ const Login = () => {
           </form>
           <div className="px-8 mb-6 flex flex-col justify-between gap-4">
             <h2 className="text-3xl font-semibold">Login with: </h2>
-            <div className="btn btn-outline">
-              <FcGoogle className="text-" /> Google
-            </div>
-            <div className="btn btn-outline">
-              <FaGithub className="text-" /> Github
-            </div>
+            <button onClick={handleGoogleSignIn} className="btn btn-outline">
+              <FcGoogle className="text-2xl" /> Google
+            </button>
+            <button onClick={handleGithubSignIn} className="btn btn-outline">
+              <FaGithub className="text-2xl" /> Github
+            </button>
           </div>
           <div className="mb-5">
             <label className="text-center">

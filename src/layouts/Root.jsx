@@ -1,10 +1,10 @@
 import { Outlet } from "react-router-dom";
-import Header from "../components/Header/Header";
+import Navbar from "../components/Header/Navbar";
 
 const Root = () => {
   return (
     <>
-      <Header />
+      <Navbar />
       <div className="max-w-6xl mx-auto px-4 md:px-3 lg:px-2 font-poppins">
         <Outlet />
       </div>
