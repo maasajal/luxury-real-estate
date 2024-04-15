@@ -1,28 +1,57 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { AuthContext } from "../../providers/AuthProvider";
 import { Link, useNavigate } from "react-router-dom";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import { FaEye, FaEyeSlash } from "react-icons/fa";
 
 const Register = () => {
   const { createUser } = useContext(AuthContext);
   const navigate = useNavigate();
 
+  const [showPassword, setShowPassword] = useState(false);
+
   const handleRegister = (e) => {
     e.preventDefault();
     const form = new FormData(e.currentTarget);
-
     const name = form.get("name");
     const photoUrl = form.get("photoUrl");
     const email = form.get("email");
     const password = form.get("password");
+    const checkbox = form.get("checkbox");
+
+    // Password validation
+    if (password.length < 6) {
+      toast.error("Password Length must be at least 6 characters");
+      return;
+    } else if (!/[A-Z]/.test(password)) {
+      toast.error("Must have an Uppercase letter in the password");
+      return;
+    } else if (!/[a-z]/.test(password)) {
+      toast.error("Must have a Lowercase letter in the password");
+      return;
+    } else if (!checkbox) {
+      toast.error("Please accept the terms and conditions.");
+      return;
+    }
+
+    // Create new user
     createUser(email, password)
       .then((result) => {
         const user = result.user;
         console.log(user);
+        toast.success(
+          `Welcome ${user.displayName ? user.displayName : user.email}`
+        );
         e.target.reset();
-        navigate("/");
+        // navigate("/");
       })
-      .catch((error) => console.error(error));
+      .catch((err) => {
+        console.error(err);
+        toast.error(err.message);
+      });
   };
+
   return (
     <>
       <div className="hero bg-base-200 my-36">
@@ -68,27 +97,35 @@ const Register = () => {
                   required
                 />
               </div>
-              <div className="form-control">
+              <div className="form-control relative">
                 <label className="label">
                   <span className="label-text">Password</span>
                 </label>
                 <input
-                  type="password"
+                  type={showPassword ? "text" : "password"}
                   placeholder="Enter your password"
                   name="password"
                   className="input input-bordered"
                   required
                 />
+                <span
+                  className="absolute right-2 bottom-4"
+                  onClick={() => setShowPassword(!showPassword)}
+                >
+                  {!showPassword ? <FaEye /> : <FaEyeSlash />}
+                </span>
               </div>
               <div className="flex items-center gap-2">
                 <input
                   type="checkbox"
                   className="checkbox"
+                  name="checkbox"
                   id="term"
-                  required
                 />
                 <label className="label" htmlFor="term">
-                  <a className="label-text">Accept Terms & Conditions</a>
+                  <a href="" target="_blank" className="label-text">
+                    Accept Terms & Conditions
+                  </a>
                 </label>
               </div>
               <div className="form-control mt-3">
@@ -109,6 +146,8 @@ const Register = () => {
           </div>
         </div>
       </div>
+      {/* Toast a message */}
+      <ToastContainer position="top-center" />
     </>
   );
 };
