@@ -30,7 +30,7 @@ const Navbar = () => {
     </>,
   ];
   return (
-    <div className="navbar bg-transparent absolute top-0 left-0">
+    <div className="navbar bg-transparent absolute top-0 left-0 z-10">
       <div className="navbar lg:max-w-6xl mx-auto px-3 md:px-5 flex flex-col lg:flex-row">
         <div className="lg:navbar-start">
           <div className="dropdown">

@@ -1,7 +1,14 @@
+import { useLoaderData } from "react-router-dom";
+import EstateCard from "../../components/EstateCard/EstateCard";
+
 const Home = () => {
+  const realEstate = useLoaderData();
+  console.log(realEstate);
   return (
-    <div>
-      {/* <h1 className="text-8xl font-bold font-bebasNeue">Luxury Home</h1> */}
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 my-24">
+      {realEstate.map((estate) => (
+        <EstateCard key={estate.id} estate={estate} />
+      ))}
     </div>
   );
 };

@@ -1,0 +1,110 @@
+[
+  {
+    "estate_title": "Oceanfront Penthouse",
+    "id": 1,
+    "segment_name": "Penthouse",
+    "description": "Luxurious penthouse offering breathtaking views of the ocean. Features private elevator access, expansive terrace, and high-end finishes throughout.",
+    "price": 5000000,
+    "status": "sale",
+    "area": "3,000 sq ft",
+    "location": "Miami Beach, Florida",
+    "facilities": ["Private elevator", "Terrace", "Oceanfront views"],
+    "image": "oceanfront_penthouse.jpg"
+  },
+  {
+    "estate_title": "Private Island Retreat",
+    "id": 2,
+    "segment_name": "Private Island",
+    "description": "Secluded private island estate with luxurious villa and pristine beaches. Ideal for those seeking ultimate privacy and relaxation.",
+    "price": 10000000,
+    "status": "sale",
+    "area": "10 acres",
+    "location": "Caribbean Sea",
+    "facilities": ["Private beach", "Infinity pool", "Villa"],
+    "image": "private_island_retreat.jpg"
+  },
+  {
+    "estate_title": "Mountain Chalet",
+    "id": 3,
+    "segment_name": "Ski Chalet",
+    "description": "Elegant ski chalet nestled in the mountains. Offers ski-in/ski-out access, luxurious amenities, and stunning views of the alpine landscape.",
+    "price": 3500000,
+    "status": "sale",
+    "area": "5,000 sq ft",
+    "location": "Aspen, Colorado",
+    "facilities": ["Ski-in/ski-out access", "Hot tub", "Stone fireplace"],
+    "image": "mountain_chalet.jpg"
+  },
+  {
+    "estate_title": "Historic Castle",
+    "id": 4,
+    "segment_name": "Castle",
+    "description": "Magnificent historic castle with rich architectural heritage. Features grand interiors, sprawling grounds, and panoramic views.",
+    "price": 15000000,
+    "status": "sale",
+    "area": "20,000 sq ft",
+    "location": "Loire Valley, France",
+    "facilities": ["Towers", "Moat", "Chapel"],
+    "image": "historic_castle.jpg"
+  },
+  {
+    "estate_title": "Luxury Resort Villa",
+    "id": 5,
+    "segment_name": "Villa",
+    "description": "Exquisite villa located within a luxury resort community. Offers world-class amenities, impeccable service, and stunning ocean views.",
+    "price": 2500000,
+    "status": "sale",
+    "area": "4,500 sq ft",
+    "location": "Maui, Hawaii",
+    "facilities": ["Infinity pool", "Private beach access", "Gourmet kitchen"],
+    "image": "luxury_resort_villa.jpg"
+  },
+  {
+    "estate_title": "Beachfront Mansion",
+    "id": 6,
+    "segment_name": "Mansion",
+    "description": "Palatial beachfront mansion with unparalleled luxury and elegance. Features expansive living spaces, lush gardens, and infinity pool.",
+    "price": 12000000,
+    "status": "sale",
+    "area": "15,000 sq ft",
+    "location": "Malibu, California",
+    "facilities": ["Infinity pool", "Private beachfront", "Home theater"],
+    "image": "beachfront_mansion.jpg"
+  },
+  {
+    "estate_title": "Tropical Resort Retreat",
+    "id": 7,
+    "segment_name": "Resort",
+    "description": "Exclusive tropical resort retreat offering luxury accommodations and world-class amenities. Ideal for relaxation and indulgence.",
+    "price": 8000000,
+    "status": "sale",
+    "area": "7 acres",
+    "location": "Bora Bora, French Polynesia",
+    "facilities": ["Overwater bungalows", "Spa", "Fine dining restaurants"],
+    "image": "tropical_resort_retreat.jpg"
+  },
+  {
+    "estate_title": "Lakefront Villa",
+    "id": 8,
+    "segment_name": "Villa",
+    "description": "Luxurious lakefront villa with stunning views and serene surroundings. Features spacious interiors, private dock, and lush landscaping.",
+    "price": 4500000,
+    "status": "sale",
+    "area": "6,000 sq ft",
+    "location": "Lake Como, Italy",
+    "facilities": ["Private dock", "Infinity pool", "Gourmet kitchen"],
+    "image": "lakefront_villa.jpg"
+  },
+  {
+    "estate_title": "Eco-Friendly Retreat",
+    "id": 9,
+    "segment_name": "Eco-Friendly",
+    "description": "Sustainable eco-friendly retreat nestled in nature. Features energy-efficient design, renewable energy sources, and tranquil surroundings.",
+    "price": 1800000,
+    "status": "sale",
+    "area": "2,500 sq ft",
+    "location": "Big Sur, California",
+    "facilities": ["Solar panels", "Rainwater harvesting", "Organic garden"],
+    "image": "eco_friendly_retreat.jpg"
+  }
+]

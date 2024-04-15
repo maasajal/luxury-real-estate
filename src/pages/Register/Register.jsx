@@ -40,6 +40,8 @@ const Register = () => {
       .then((result) => {
         const user = result.user;
         console.log(user);
+        user.displayName = name;
+        user.photoURL = photoUrl;
         toast.success(
           `Welcome ${user.displayName ? user.displayName : user.email}`
         );
