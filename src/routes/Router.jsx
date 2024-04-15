@@ -5,6 +5,7 @@ import ErrorPage from "../pages/ErrorPage/ErrorPage";
 import Login from "../pages/Login/Login";
 import Register from "../pages/Register/Register";
 import PropertyDetails from "../pages/PropertyDetails/PropertyDetails";
+import PrivateRoute from "./PrivateRoute";
 
 const router = createBrowserRouter([
   {
@@ -19,7 +20,11 @@ const router = createBrowserRouter([
       },
       {
         path: `/property/:estate_title`,
-        element: <PropertyDetails />,
+        element: (
+          <PrivateRoute>
+            <PropertyDetails />
+          </PrivateRoute>
+        ),
         loader: () => fetch("../realEstate.json"),
       },
       {

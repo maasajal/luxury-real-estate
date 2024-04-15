@@ -1,12 +1,13 @@
 import { useContext, useState } from "react";
 import { AuthContext } from "../../providers/AuthProvider";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 
 const Register = () => {
   const { createUser } = useContext(AuthContext);
+  const location = useLocation();
   const navigate = useNavigate();
 
   const [showPassword, setShowPassword] = useState(false);
@@ -46,7 +47,7 @@ const Register = () => {
           `Welcome ${user.displayName ? user.displayName : user.email}`
         );
         e.target.reset();
-        // navigate("/");
+        navigate(location?.state ? location.state : "/");
       })
       .catch((err) => {
         console.error(err);
