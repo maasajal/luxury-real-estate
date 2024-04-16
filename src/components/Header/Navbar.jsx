@@ -30,7 +30,7 @@ const Navbar = () => {
     </>,
   ];
   return (
-    <div className="navbar bg-transparent absolute top-0 left-0 z-10">
+    <div className="navbar bg-transparent absolute top-0 left-0 z-10 text-white">
       <div className="navbar lg:max-w-6xl mx-auto px-3 md:px-5 flex flex-col lg:flex-row">
         <div className="lg:navbar-start">
           <div className="dropdown">
@@ -58,7 +58,7 @@ const Navbar = () => {
             </ul>
           </div>
           <a href="/" className="btn btn-ghost text-3xl font-bebasNeue">
-            <span className="text-green-400 hover:text-black">Luxuria</span>{" "}
+            <span className="text-green-400">Luxuria</span>{" "}
             Palace
           </a>
         </div>
@@ -98,7 +98,7 @@ const Navbar = () => {
             </div>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-black"
             >
               <li>
                 <NavLink to="/user-profile">

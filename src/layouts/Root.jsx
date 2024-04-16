@@ -1,12 +1,13 @@
 import { Outlet } from "react-router-dom";
 import Navbar from "../components/Header/Navbar";
 import Footer from "../components/Footer/Footer";
+import Banner from "../components/Banner/Banner";
 
 const Root = () => {
   return (
     <>
       <Navbar />
-      <div className="max-w-6xl mx-auto px-4 md:px-3 lg:px-2 font-poppins">
+      <div className="font-poppins">
         <Outlet />
       </div>
       <Footer />

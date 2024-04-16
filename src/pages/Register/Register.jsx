@@ -57,100 +57,102 @@ const Register = () => {
 
   return (
     <>
-      <div className="hero bg-base-200 my-36">
-        <div className="hero-content flex-col">
-          <div className="text-center lg:text-left my-8">
-            <h1 className="text-5xl font-bold">Register your account</h1>
-          </div>
-          <div className="card shrink-0 w-full max-w-sm shadow-2xl bg-base-100 mb-6">
-            <form onSubmit={handleRegister} className="card-body">
-              <div className="form-control">
-                <label className="label">
-                  <span className="label-text">Name</span>
+      <div className="max-w-6xl mx-auto px-4 md:px-3 lg:px-2">
+        <div className="hero bg-base-200 my-36 rounded-xl">
+          <div className="hero-content flex-col">
+            <div className="text-center lg:text-left my-8">
+              <h1 className="text-5xl font-bold">Register your account</h1>
+            </div>
+            <div className="card shrink-0 w-full max-w-sm shadow-2xl bg-base-100 mb-6">
+              <form onSubmit={handleRegister} className="card-body">
+                <div className="form-control">
+                  <label className="label">
+                    <span className="label-text">Name</span>
+                  </label>
+                  <input
+                    type="text"
+                    placeholder="Enter your name"
+                    name="name"
+                    className="input input-bordered"
+                    required
+                  />
+                </div>
+                <div className="form-control">
+                  <label className="label">
+                    <span className="label-text">Photo URL</span>
+                  </label>
+                  <input
+                    type="text"
+                    placeholder="Enter your photo URL"
+                    name="photoUrl"
+                    className="input input-bordered"
+                    required
+                  />
+                </div>
+                <div className="form-control">
+                  <label className="label">
+                    <span className="label-text">Email</span>
+                  </label>
+                  <input
+                    type="email"
+                    placeholder="Enter your email"
+                    name="email"
+                    className="input input-bordered"
+                    required
+                  />
+                </div>
+                <div className="form-control relative">
+                  <label className="label">
+                    <span className="label-text">Password</span>
+                  </label>
+                  <input
+                    type={showPassword ? "text" : "password"}
+                    placeholder="Enter your password"
+                    name="password"
+                    className="input input-bordered"
+                    required
+                  />
+                  <span
+                    className="absolute right-2 bottom-4"
+                    onClick={() => setShowPassword(!showPassword)}
+                  >
+                    {!showPassword ? <FaEye /> : <FaEyeSlash />}
+                  </span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <input
+                    type="checkbox"
+                    className="checkbox"
+                    name="checkbox"
+                    id="term"
+                  />
+                  <label className="label" htmlFor="term">
+                    <a href="" target="_blank" className="label-text">
+                      Accept Terms & Conditions
+                    </a>
+                  </label>
+                </div>
+                <div className="form-control mt-3">
+                  <button className="btn bg-green-400">Register</button>
+                </div>
+              </form>
+              <div className="mb-5">
+                <label className="text-center">
+                  <p className="label-text">
+                    Already Have An Account?
+                    <Link to="/login" className="text-green-400 font-bold">
+                      {" "}
+                      Login
+                    </Link>
+                  </p>
                 </label>
-                <input
-                  type="text"
-                  placeholder="Enter your name"
-                  name="name"
-                  className="input input-bordered"
-                  required
-                />
               </div>
-              <div className="form-control">
-                <label className="label">
-                  <span className="label-text">Photo URL</span>
-                </label>
-                <input
-                  type="text"
-                  placeholder="Enter your photo URL"
-                  name="photoUrl"
-                  className="input input-bordered"
-                  required
-                />
-              </div>
-              <div className="form-control">
-                <label className="label">
-                  <span className="label-text">Email</span>
-                </label>
-                <input
-                  type="email"
-                  placeholder="Enter your email"
-                  name="email"
-                  className="input input-bordered"
-                  required
-                />
-              </div>
-              <div className="form-control relative">
-                <label className="label">
-                  <span className="label-text">Password</span>
-                </label>
-                <input
-                  type={showPassword ? "text" : "password"}
-                  placeholder="Enter your password"
-                  name="password"
-                  className="input input-bordered"
-                  required
-                />
-                <span
-                  className="absolute right-2 bottom-4"
-                  onClick={() => setShowPassword(!showPassword)}
-                >
-                  {!showPassword ? <FaEye /> : <FaEyeSlash />}
-                </span>
-              </div>
-              <div className="flex items-center gap-2">
-                <input
-                  type="checkbox"
-                  className="checkbox"
-                  name="checkbox"
-                  id="term"
-                />
-                <label className="label" htmlFor="term">
-                  <a href="" target="_blank" className="label-text">
-                    Accept Terms & Conditions
-                  </a>
-                </label>
-              </div>
-              <div className="form-control mt-3">
-                <button className="btn bg-green-400">Register</button>
-              </div>
-            </form>
-            <div className="mb-5">
-              <label className="text-center">
-                <p className="label-text">
-                  Already Have An Account?
-                  <Link to="/login" className="text-green-400 font-bold">
-                    {" "}
-                    Login
-                  </Link>
-                </p>
-              </label>
             </div>
           </div>
         </div>
+        {/* Toast a message */}
+        <ToastContainer position="top-center" />
       </div>
-      {/* Toast a message */}
-      <ToastContainer position="top-center" />
     </>
   );
 };
