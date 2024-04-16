@@ -9,7 +9,8 @@
     "area": "3,000 sq ft",
     "location": "Miami Beach, Florida",
     "facilities": ["Private elevator", "Terrace", "Oceanfront views"],
-    "image": "https://i.ibb.co/0fXsyj5/Ocean-Penthouse.jpg"
+    "image": "https://i.ibb.co/0fXsyj5/Ocean-Penthouse.jpg",
+    "detail_property": "Welcome to the Oceanfront Penthouse, a stunning residence perched atop a prestigious building in the vibrant heart of Miami Beach, Florida. Boasting unparalleled luxury and breathtaking ocean views, this penthouse redefines coastal living. As you step into the grand foyer, you're greeted by the opulence of the residence, with its sleek marble floors, soaring ceilings, and designer finishes throughout. The spacious living area features floor-to-ceiling windows that bathe the space in natural light and provide uninterrupted views of the Atlantic Ocean. Whether you're hosting a glamorous soirée or enjoying a quiet evening in, the open-concept layout effortlessly blends indoor and outdoor living, with sliding glass doors leading to the expansive terrace. Step outside onto the terrace, where panoramic vistas of the azure waters stretch as far as the eye can see. This sprawling outdoor oasis is the perfect setting for alfresco dining, lounging in the sun, or sipping cocktails as you watch the sunset over the horizon. Back inside, the gourmet kitchen is a chef's dream, outfitted with top-of-the-line appliances, custom cabinetry, and a spacious island with seating for entertaining guests. Retreat to the luxurious master suite, where floor-to-ceiling windows frame mesmerizing ocean views. The suite features a private sitting area, a lavish en-suite bathroom with a soaking tub and walk-in shower, and a spacious walk-in closet. Two additional guest bedrooms, each with its own en-suite bathroom, offer comfort and privacy for family and friends. This penthouse also features a private elevator, providing direct access to the residence for added convenience and security. With world-class amenities including a fitness center, spa, and concierge services, the Oceanfront Penthouse offers the ultimate luxury lifestyle. Located in the heart of Miami Beach, residents enjoy easy access to the city's renowned restaurants, boutiques, and cultural attractions. From sunrise to sunset, the Oceanfront Penthouse offers a life of unparalleled luxury and sophistication."
   },
   {
     "estate_title": "Private Island Retreat",
@@ -21,19 +22,21 @@
     "area": "10 acres",
     "location": "Caribbean Sea",
     "facilities": ["Private beach", "Infinity pool", "Villa"],
-    "image": "private_island_retreat.jpg"
+    "image": "https://i.ibb.co/xhHsXfL/Private-Island-Retreat.jpg",
+    "detail_property": "Welcome to your exclusive Private Island Retreat, a secluded paradise nestled in the serene waters of the Caribbean Sea. This extraordinary estate offers discerning travelers the ultimate escape, combining unparalleled luxury with pristine natural beauty. As you approach the island by boat or helicopter, you'll be greeted by the sight of lush tropical vegetation, crystal-clear waters, and powdery white sand beaches stretching as far as the eye can see. Set on 10 acres of pristine land, the Private Island Retreat is a sanctuary of privacy and tranquility, providing the perfect backdrop for relaxation and rejuvenation. The centerpiece of the estate is the luxurious villa, a masterpiece of contemporary design and Caribbean-inspired architecture. Surrounded by manicured gardens and swaying palm trees, the villa boasts spacious living areas, high-end finishes, and panoramic views of the turquoise sea. Step inside the villa, where floor-to-ceiling windows flood the interiors with natural light and create a seamless connection between indoor and outdoor living spaces. The open-concept layout is ideal for entertaining, with a gourmet kitchen, formal dining area, and expansive living room that opens onto a shaded terrace overlooking the infinity pool. Relax and unwind in one of the villa's sumptuous bedrooms, each appointed with plush furnishings, deluxe linens, and en-suite bathrooms with rain showers and soaking tubs. Outside, the island offers a wealth of amenities for guests to enjoy, including a private beach with pristine sand and calm waters perfect for swimming and snorkeling. Take a dip in the infinity pool, where you can soak up the sun and savor panoramic views of the surrounding sea. For those seeking adventure, the island offers a variety of water sports activities, from kayaking and paddleboarding to jet skiing and sailing. After a day of exploration, return to the villa for a gourmet dinner prepared by your personal chef, who will delight your palate with a tantalizing array of Caribbean-inspired dishes made from fresh, locally sourced ingredients. As the sun sets over the horizon, gather with friends and family for cocktails on the terrace, where you can toast to another day in paradise. Whether you're seeking a romantic retreat, a family vacation, or a destination wedding, the Private Island Retreat offers an unparalleled experience of luxury, privacy, and natural beauty."
   },
   {
-    "estate_title": "Mountain Chalet",
+    "estate_title": "Tropical Resort Retreat",
     "id": 3,
-    "segment_name": "Ski Chalet",
-    "description": "Elegant ski chalet nestled in the mountains. Offers ski-in/ski-out access, luxurious amenities, and stunning views of the alpine landscape.",
-    "price": 3500000,
-    "status": "sale",
-    "area": "5,000 sq ft",
-    "location": "Aspen, Colorado",
-    "facilities": ["Ski-in/ski-out access", "Hot tub", "Stone fireplace"],
-    "image": "mountain_chalet.jpg"
+    "segment_name": "Resort",
+    "description": "Exclusive tropical resort retreat offering luxury accommodations and world-class amenities. Ideal for relaxation and indulgence.",
+    "price": 8000000,
+    "status": "rent",
+    "area": "7 acres",
+    "location": "Bora Bora, French Polynesia",
+    "facilities": ["Overwater bungalows", "Spa", "Fine dining restaurants"],
+    "image": "https://i.ibb.co/xFnnNJ8/tropical-resort-retreat.jpg",
+    "detail_property": "Welcome to the epitome of luxury living at the Tropical Resort Retreat in Bora Bora, French Polynesia. Situated on a pristine private island amidst the crystal-clear waters of the South Pacific, this exclusive resort offers an unparalleled escape from the ordinary. From the moment you arrive, you'll be enchanted by the natural beauty of Bora Bora, with its lush tropical landscapes, turquoise lagoons, and towering volcanic peaks. The resort itself is a masterpiece of design and craftsmanship, blending seamlessly with its surroundings while providing the ultimate in comfort and indulgence. Accommodations at the Tropical Resort Retreat are nothing short of spectacular, with a range of luxurious options to suit every preference. Choose from overwater bungalows perched above the lagoon, beachfront villas nestled in the sand, or hillside suites with panoramic views of the ocean. Each accommodation is elegantly appointed with modern amenities and thoughtful touches to ensure a truly memorable stay. Step outside your door and discover a world of leisure and recreation at your fingertips. Spend your days lounging by the infinity pool, basking in the warm tropical sun, or exploring the island's pristine beaches and vibrant coral reefs. For those seeking relaxation and rejuvenation, indulge in a treatment at the resort's spa, where expert therapists offer a range of massages, facials, and wellness therapies inspired by Polynesian traditions. When it comes to dining, the Tropical Resort Retreat offers an array of culinary delights to tantalize your taste buds. Enjoy fresh seafood and exotic flavors at the resort's fine dining restaurants, where talented chefs showcase the best of local and international cuisine. Whether you're sipping cocktails at sunset, dining under the stars, or enjoying a private beach picnic, every meal is a celebration of the senses. Beyond its luxurious accommodations and world-class amenities, the Tropical Resort Retreat is committed to sustainability and environmental stewardship. The resort's eco-friendly initiatives include solar power, rainwater harvesting, and coral reef conservation efforts, ensuring that future generations can continue to enjoy this paradise for years to come. Whether you're planning a romantic getaway, a family vacation, or a destination wedding, the Tropical Resort Retreat offers the perfect blend of luxury, adventure, and relaxation. Come experience the magic of Bora Bora at this exclusive tropical paradise."
   },
   {
     "estate_title": "Historic Castle",
@@ -45,7 +48,8 @@
     "area": "20,000 sq ft",
     "location": "Loire Valley, France",
     "facilities": ["Towers", "Moat", "Chapel"],
-    "image": "historic_castle.jpg"
+    "image": "https://i.ibb.co/fML04BM/historic-castle.jpg",
+    "detail_property": "Welcome to the Historic Castle, a majestic fortress steeped in history and grandeur, nestled in the picturesque Loire Valley of France. This magnificent estate stands as a testament to centuries of architectural excellence and cultural significance, offering a rare glimpse into the past while providing all the modern comforts of luxury living. From its imposing towers to its majestic moat, every corner of the Historic Castle exudes a sense of timeless elegance and refinement. Step through the ancient gates and into a world of opulence and splendor, where every room tells a story and every detail is a work of art. The castle's grand interiors are adorned with exquisite furnishings, ornate tapestries, and priceless antiques, creating a living museum of European history and culture. With its sprawling grounds and manicured gardens, the Historic Castle offers a sanctuary of tranquility and beauty amidst the rolling hills of the Loire Valley. Stroll along the winding pathways, relax by the shimmering fountain, or enjoy a picnic in the shade of ancient oak trees. From every vantage point, breathtaking panoramic views of the surrounding countryside unfold, providing a sense of serenity and inspiration that is truly unmatched. The Historic Castle is more than just a residence – it's a living piece of history, a place where past and present converge in a harmonious blend of old-world charm and modern luxury. Whether you're hosting a lavish gala in the grand ballroom, enjoying a quiet evening by the fireside, or exploring the castle's hidden passageways and secret chambers, every moment spent within these hallowed walls is an experience to be cherished. With its rich architectural heritage, stunning natural beauty, and unparalleled sense of grandeur, the Historic Castle offers a lifestyle unlike any other – a lifestyle reserved for those who appreciate the finer things in life and seek to surround themselves with beauty, history, and tradition."
   },
   {
     "estate_title": "Luxury Resort Villa",
@@ -57,11 +61,25 @@
     "area": "4,500 sq ft",
     "location": "Maui, Hawaii",
     "facilities": ["Infinity pool", "Private beach access", "Gourmet kitchen"],
-    "image": "luxury_resort_villa.jpg"
+    "image": "https://i.ibb.co/4WL258w/luxury-resort-villa.jpg",
+    "detail_property": "Welcome to the Luxury Resort Villa, an exquisite retreat nestled within the breathtaking beauty of Maui, Hawaii. Situated within a prestigious luxury resort community, this villa offers a lifestyle of unparalleled luxury, comfort, and relaxation. From the moment you arrive, you'll be captivated by the villa's stunning ocean views, lush tropical surroundings, and world-class amenities. Step through the grand entrance and into a world of elegance and sophistication, where every detail has been carefully curated to ensure an unforgettable experience. The villa boasts spacious interiors, tastefully decorated with high-end furnishings, designer fixtures, and luxurious finishes. The open-concept living area is ideal for entertaining, with floor-to-ceiling windows that frame panoramic views of the Pacific Ocean and provide abundant natural light. The gourmet kitchen is a chef's dream, equipped with state-of-the-art appliances, custom cabinetry, and a large island perfect for preparing and serving gourmet meals. Step outside onto the expansive lanai, where you'll find a private infinity pool, outdoor dining area, and lounging spaces surrounded by lush tropical gardens. The villa also offers exclusive access to a pristine private beach, where you can swim, snorkel, or simply relax and soak up the sun in peace and privacy. For those seeking relaxation and rejuvenation, the resort's spa offers a range of indulgent treatments and wellness experiences, while the fitness center provides state-of-the-art equipment and personalized training sessions. With its unmatched combination of natural beauty, luxurious accommodations, and impeccable service, the Luxury Resort Villa offers a lifestyle of luxury and tranquility that is truly second to none. Whether you're sipping cocktails by the pool, exploring the island's pristine beaches, or simply enjoying the breathtaking sunsets from your private lanai, every moment spent at this villa is sure to be a cherished memory that will last a lifetime."
+  },
+  {
+    "estate_title": "Mountain Chalet",
+    "id": 6,
+    "segment_name": "Ski Chalet",
+    "description": "Elegant ski chalet nestled in the mountains. Offers ski-in/ski-out access, luxurious amenities, and stunning views of the alpine landscape.",
+    "price": 3500000,
+    "status": "sale",
+    "area": "5,000 sq ft",
+    "location": "Aspen, Colorado",
+    "facilities": ["Ski-in/ski-out access", "Hot tub", "Stone fireplace"],
+    "image": "https://i.ibb.co/ts0dCp2/mountain-chalet.jpg",
+    "detail_property": "Welcome to the Mountain Chalet, an elegant retreat nestled amidst the breathtaking beauty of Aspen, Colorado. Situated in the heart of the Rocky Mountains, this ski chalet offers a luxurious escape for those seeking adventure and relaxation. Step inside and be greeted by the chalet's warm and inviting atmosphere, where rustic charm meets modern luxury. The spacious living area features a cozy stone fireplace, perfect for gathering with friends and family after a day on the slopes. Floor-to-ceiling windows offer panoramic views of the surrounding alpine landscape, allowing you to immerse yourself in the natural beauty of the mountains. The chalet boasts ski-in/ski-out access, allowing you to hit the slopes right from your doorstep and easily access the world-class ski trails of Aspen. After a day of skiing, unwind in the chalet's private hot tub, where you can soak tired muscles and take in the stunning mountain vistas. The gourmet kitchen is equipped with top-of-the-line appliances and ample counter space, making it a chef's dream for preparing delicious meals and après-ski snacks. Upstairs, you'll find luxurious bedrooms and well-appointed bathrooms, providing a peaceful retreat for rest and relaxation. Outside, the chalet's expansive deck is the perfect spot for enjoying your morning coffee or evening cocktails while taking in the crisp mountain air. Whether you're hitting the slopes, exploring the town of Aspen, or simply unwinding in the comfort of your chalet, the Mountain Chalet offers a truly unforgettable mountain getaway."
   },
   {
     "estate_title": "Beachfront Mansion",
-    "id": 6,
+    "id": 7,
     "segment_name": "Mansion",
     "description": "Palatial beachfront mansion with unparalleled luxury and elegance. Features expansive living spaces, lush gardens, and infinity pool.",
     "price": 12000000,
@@ -69,19 +87,8 @@
     "area": "15,000 sq ft",
     "location": "Malibu, California",
     "facilities": ["Infinity pool", "Private beachfront", "Home theater"],
-    "image": "beachfront_mansion.jpg"
-  },
-  {
-    "estate_title": "Tropical Resort Retreat",
-    "id": 7,
-    "segment_name": "Resort",
-    "description": "Exclusive tropical resort retreat offering luxury accommodations and world-class amenities. Ideal for relaxation and indulgence.",
-    "price": 8000000,
-    "status": "rent",
-    "area": "7 acres",
-    "location": "Bora Bora, French Polynesia",
-    "facilities": ["Overwater bungalows", "Spa", "Fine dining restaurants"],
-    "image": "tropical_resort_retreat.jpg"
+    "image": "https://i.ibb.co/K6TFDS2/beachfront-mansion.jpg",
+    "detail_property": "Welcome to the Beachfront Mansion, a palatial estate nestled along the pristine shores of Malibu, California. This exquisite residence exudes unparalleled luxury and elegance, offering a truly extraordinary living experience. Step inside and be greeted by the grandeur of the mansion's expansive living spaces, adorned with high ceilings, exquisite finishes, and floor-to-ceiling windows that showcase panoramic views of the Pacific Ocean. The heart of the mansion is its magnificent infinity pool, where you can enjoy endless days of relaxation and rejuvenation while soaking in the warm California sun. Adjacent to the pool, lush gardens create a tranquil oasis, perfect for hosting outdoor gatherings or simply unwinding amidst the beauty of nature. Inside, the mansion boasts a state-of-the-art home theater, where you can enjoy movie nights with family and friends in the comfort of your own private cinema. The gourmet kitchen is a chef's dream, equipped with top-of-the-line appliances, marble countertops, and ample space for culinary creativity. Upstairs, the master suite offers a luxurious retreat, complete with a private balcony overlooking the ocean, a spa-like ensuite bathroom, and a spacious walk-in closet. Additional guest suites provide ample accommodation for family and visitors, ensuring everyone enjoys the utmost comfort and privacy. With its prime location in the prestigious enclave of Malibu, this beachfront mansion offers a lifestyle of luxury, tranquility, and endless possibility."
   },
   {
     "estate_title": "Lakefront Villa",
@@ -93,7 +100,8 @@
     "area": "6,000 sq ft",
     "location": "Lake Como, Italy",
     "facilities": ["Private dock", "Infinity pool", "Gourmet kitchen"],
-    "image": "lakefront_villa.jpg"
+    "image": "https://i.ibb.co/0XN4JXQ/lakefront-villa.jpg",
+    "detail_property": "Welcome to the Lakefront Villa, a luxurious retreat nestled on the picturesque shores of Lake Como, Italy. This exquisite villa offers unparalleled elegance and sophistication, complemented by breathtaking views of the tranquil waters and lush surroundings. Step inside and be greeted by spacious interiors adorned with elegant furnishings, designer finishes, and floor-to-ceiling windows that frame panoramic vistas of the lake and mountains beyond. The heart of the villa is its expansive living area, perfect for entertaining guests or simply relaxing in style. The gourmet kitchen is a chef's delight, featuring top-of-the-line appliances, marble countertops, and custom cabinetry. Outside, the villa boasts a private dock, where you can embark on leisurely boat rides or soak in the serenity of the lake. The infinity pool offers a refreshing escape on warm summer days, while the meticulously landscaped gardens provide a peaceful retreat for quiet moments of reflection. Upstairs, the master suite is a sanctuary of luxury, complete with a private balcony overlooking the lake, a spa-like ensuite bathroom, and a spacious walk-in closet. Additional guest suites offer comfort and privacy for family and visitors, ensuring everyone enjoys an unforgettable stay. With its idyllic location and luxurious amenities, the Lakefront Villa offers a lifestyle of unparalleled beauty and tranquility on the shores of Lake Como."
   },
   {
     "estate_title": "Eco-Friendly Retreat",
@@ -105,6 +113,7 @@
     "area": "2,500 sq ft",
     "location": "Big Sur, California",
     "facilities": ["Solar panels", "Rainwater harvesting", "Organic garden"],
-    "image": "eco_friendly_retreat.jpg"
+    "image": "https://i.ibb.co/M8Txftw/eco-friendly-retreat.jpg",
+    "detail_property": "Welcome to the Eco-Friendly Retreat, an oasis of sustainability and tranquility nestled amidst the majestic beauty of Big Sur, California. This unique retreat is designed to harmonize with its natural surroundings, offering a sanctuary where guests can reconnect with nature while minimizing their environmental footprint. The retreat features an innovative energy-efficient design, incorporating solar panels and other renewable energy sources to reduce reliance on traditional power sources. Rainwater harvesting systems ensure that water is used responsibly, while an organic garden provides fresh, locally sourced produce for guests to enjoy. The accommodations are thoughtfully designed to maximize comfort and minimize environmental impact, with eco-friendly materials and energy-saving technologies throughout. Step outside and explore the serene surroundings, where towering redwoods and pristine coastline beckon you to unwind and recharge. Whether you're stargazing under the clear night sky, hiking along scenic trails, or simply relaxing in the peace and quiet of nature, the Eco-Friendly Retreat offers a truly sustainable and rejuvenating escape."
   }
 ]
