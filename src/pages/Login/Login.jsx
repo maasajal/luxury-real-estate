@@ -6,7 +6,7 @@ import { AuthContext } from "../../providers/AuthProvider";
 import { Helmet } from "react-helmet";
 
 const Login = () => {
-  const { logInUser, signInWithGoogle, signInWithGithub } =
+  const { logInUser, signInWithGoogle, signInWithGithub, loading } =
     useContext(AuthContext);
   const location = useLocation();
   const navigate = useNavigate();
@@ -67,48 +67,57 @@ const Login = () => {
             <h1 className="text-5xl font-bold">Login your property!</h1>
           </div>
           <div className="card shrink-0 w-full max-w-sm shadow-2xl bg-base-100 mb-12">
-            <form
-              onSubmit={handleLogin}
-              className="card-body animate__animated animate__zoomInUp"
-            >
-              <div className="form-control">
-                <label className="label">
-                  <span className="label-text">
-                    Email address<span className="text-red-400">*</span>
+            {!loading ? (
+              <form
+                onSubmit={handleLogin}
+                className="card-body animate__animated animate__zoomInUp"
+              >
+                <div className="form-control">
+                  <label className="label">
+                    <span className="label-text">
+                      Email address<span className="text-red-400">*</span>
+                    </span>
+                  </label>
+                  <input
+                    type="email"
+                    placeholder="Enter your email address"
+                    name="email"
+                    className="input input-bordered"
+                    required
+                  />
+                </div>
+                <div className="form-control relative">
+                  <label className="label">
+                    <span className="label-text">
+                      Password<span className="text-red-400">*</span>
+                    </span>
+                  </label>
+                  <input
+                    type={showPassword ? "text" : "password"}
+                    placeholder="Enter your password"
+                    name="password"
+                    className="input input-bordered"
+                    required
+                  />
+                  <span
+                    className="absolute right-2 bottom-4"
+                    onClick={() => setShowPassword(!showPassword)}
+                  >
+                    {!showPassword ? <FaEye /> : <FaEyeSlash />}
                   </span>
-                </label>
-                <input
-                  type="email"
-                  placeholder="Enter your email address"
-                  name="email"
-                  className="input input-bordered"
-                  required
-                />
+                </div>
+                <div className="form-control mt-6">
+                  <button className="btn bg-green-400">Login</button>
+                </div>
+              </form>
+            ) : (
+              <div>
+                <span className="loading loading-bars loading-xs"></span>
+                <span className="loading loading-bars loading-sm"></span>
+                <span className="loading loading-bars loading-md"></span>
+                <span className="loading loading-bars loading-lg"></span>
               </div>
-              <div className="form-control relative">
-                <label className="label">
-                  <span className="label-text">
-                    Password<span className="text-red-400">*</span>
-                  </span>
-                </label>
-                <input
-                  type={showPassword ? "text" : "password"}
-                  placeholder="Enter your password"
-                  name="password"
-                  className="input input-bordered"
-                  required
-                />
-                <span
-                  className="absolute right-2 bottom-4"
-                  onClick={() => setShowPassword(!showPassword)}
-                >
-                  {!showPassword ? <FaEye /> : <FaEyeSlash />}
-                </span>
-              </div>
-              <div className="form-control mt-6">
-                <button className="btn bg-green-400">Login</button>
-              </div>
-            </form>
+            )}
             <div className="px-8 mb-6 flex flex-col justify-between gap-4 animate__animated animate__zoomIn">
               <h2 className="text-3xl font-semibold">Login with: </h2>
               <button onClick={handleGoogleSignIn} className="btn btn-outline">

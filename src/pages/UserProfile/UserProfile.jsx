@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import { getAuth } from "firebase/auth";
-import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 const UserProfile = () => {
@@ -38,9 +37,46 @@ const UserProfile = () => {
               </h2>
               <img src={photoURL} alt={name} />
               <div className="card-body animate__animated animate__zoomInUp">
-                <h2 className="text-3xl">Name: {name}</h2>
-                <p>Photo URL: {photoURL}</p>
-                <p>Email: {email ? email : "Email access does't allow!"}</p>
+                <div className="bg-green-100 p-8 rounded-xl">
+                  <h2 className="text-3xl">Name: {name}</h2>
+                  <p className="py-4">Photo URL: {photoURL}</p>
+                  <p>Email: {email ? email : "Email access does't allow!"}</p>
+                </div>
+                <form className="card-body animate__animated animate__zoomInUp">
+                  <div className="form-control">
+                    <label className="label">
+                      <span className="label-text">Name:</span>
+                    </label>
+                    <input
+                      type="text"
+                      placeholder={name}
+                      name="name"
+                      className="input input-bordered"
+                    />
+                  </div>
+                  <div className="form-control">
+                    <label className="label">
+                      <span className="label-text">Photo URL:</span>
+                    </label>
+                    <input
+                      type="text"
+                      placeholder={photoURL}
+                      name="photoUrl"
+                      className="input input-bordered"
+                    />
+                  </div>
+                  <div className="form-control">
+                    <label className="label">
+                      <span className="label-text">Email:</span>
+                    </label>
+                    <input
+                      type="text"
+                      placeholder={email}
+                      name="email"
+                      className="input input-bordered"
+                    />
+                  </div>
+                </form>
                 <Link to="/update-profile">
                   <button className="btn bg-green-400 w-full">
                     Edit Profile
@@ -50,8 +86,6 @@ const UserProfile = () => {
             </div>
           </div>
         </div>
-        {/* Toast a message */}
-        <ToastContainer position="top-center" />
       </div>
     </>
   );

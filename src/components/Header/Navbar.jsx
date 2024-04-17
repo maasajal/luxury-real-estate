@@ -3,7 +3,7 @@ import userPhoto from "../../assets/user.png";
 import { useContext } from "react";
 import { AuthContext } from "../../providers/AuthProvider";
 import { ToastContainer, toast } from "react-toastify";
-import './Navbar.css';
+import "./Navbar.css";
 
 const Navbar = () => {
   const { user, logOut } = useContext(AuthContext);
@@ -17,16 +17,28 @@ const Navbar = () => {
   };
   const navLinks = [
     <>
-      <li key="home" className="animate__animated animate__bounceInLeft animate__delay-2s">
+      <li
+        key="home"
+        className="animate__animated animate__bounceInLeft animate__delay-2s"
+      >
         <NavLink to="/">Home</NavLink>
       </li>
-      <li key="properties" className="animate__animated animate__bounceInLeft animate__delay-1s">
+      <li
+        key="properties"
+        className="animate__animated animate__bounceInLeft animate__delay-1s"
+      >
         <NavLink to="/properties">Properties</NavLink>
       </li>
-      <li key="about" className="animate__animated animate__bounceInLeft animate__fast">
+      <li
+        key="about"
+        className="animate__animated animate__bounceInLeft animate__fast"
+      >
         <NavLink to="/about">About Us</NavLink>
       </li>
-      <li key="contact" className="animate__animated animate__bounceInLeft animate__faster">
+      <li
+        key="contact"
+        className="animate__animated animate__bounceInLeft animate__faster"
+      >
         <NavLink to="/contact">Contact</NavLink>
       </li>
     </>,
@@ -60,7 +72,10 @@ const Navbar = () => {
             </ul>
           </div>
           <a href="/" className="btn btn-ghost text-3xl font-bebasNeue">
-            <span className="text-green-400 animate__animated animate__pulse">Luxuria</span> Palace
+            <span className="text-green-400 animate__animated animate__pulse">
+              Luxuria
+            </span>{" "}
+            Palace
           </a>
         </div>
         <div className="lg:navbar-end">
@@ -93,10 +108,14 @@ const Navbar = () => {
                 className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-green-300"
               >
                 <li>
-                  <NavLink to="/user-profile" className="py-3">User Profile</NavLink>
+                  <NavLink to="/user-profile" className="py-3">
+                    User Profile
+                  </NavLink>
                 </li>
                 <li>
-                  <NavLink to="/update-profile" className="py-3">Update Profile</NavLink>
+                  <NavLink to="/update-profile" className="py-3">
+                    Update Profile
+                  </NavLink>
                 </li>
               </ul>
             </div>
