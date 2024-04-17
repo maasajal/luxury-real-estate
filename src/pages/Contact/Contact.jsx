@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Helmet } from "react-helmet";
 import { useForm } from "react-hook-form";
 import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
 
@@ -7,6 +8,10 @@ const Contact = () => {
   const [data, setData] = useState("");
   return (
     <div className="max-w-6xl mx-auto px-4 md:px-3 lg:px-2 my-24">
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Luxuria Palace | Contact us</title>
+      </Helmet>
       <div className="hero bg-base-200 pb-12 rounded-xl">
         <div>
           <div className="text-center max-w-2xl my-8">

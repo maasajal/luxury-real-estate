@@ -1,0 +1,74 @@
+[
+  {
+    "estate_title": "Modern City Loft",
+    "id": 10,
+    "segment_name": "City Loft",
+    "description": "Contemporary city loft with sleek design and urban charm. Features open-concept living spaces, floor-to-ceiling windows, and panoramic city views.",
+    "price": 3000000,
+    "status": "sale",
+    "area": "2,000 sq ft",
+    "location": "New York City, New York",
+    "facilities": ["Open-concept layout", "City views", "Modern amenities"],
+    "image": "https://i.ibb.co/7vpJ0tj/modern-city-loft.jpg"
+  },
+
+  {
+    "estate_title": "Cozy Countryside Cottage",
+    "id": 11,
+    "segment_name": "Countryside Cottage",
+    "description": "Charming countryside cottage nestled amidst picturesque landscapes. Offers a tranquil retreat with rustic charm, lush gardens, and scenic views.",
+    "price": 1500000,
+    "status": "sale",
+    "area": "1,500 sq ft",
+    "location": "Cotswolds, England",
+    "facilities": ["Rustic charm", "Scenic views", "Lush gardens"],
+    "image": "https://i.ibb.co/2cy0ZYq/countryside-cottage.jpg"
+  },
+
+  {
+    "estate_title": "Urban Chic Apartment",
+    "id": 12,
+    "segment_name": "City Apartment",
+    "description": "Stylish urban apartment in the heart of the city. Boasts contemporary design, modern amenities, and convenient access to vibrant city life.",
+    "price": 2000000,
+    "status": "sale",
+    "area": "1,200 sq ft",
+    "location": "San Francisco, California",
+    "facilities": ["Contemporary design", "Modern amenities", "City living"],
+    "image": "https://i.ibb.co/dczGMBf/urban-chic-apartment.jpg"
+  },
+
+  {
+    "estate_title": "Riverside Retreat",
+    "id": 13,
+    "segment_name": "Riverside",
+    "description": "Tranquil riverside retreat offering serenity and natural beauty. Features riverfront access, expansive outdoor spaces, and peaceful surroundings.",
+    "price": 2500000,
+    "status": "sale",
+    "area": "3,000 sq ft",
+    "location": "Sedona, Arizona",
+    "facilities": [
+      "Riverfront access",
+      "Expansive outdoor spaces",
+      "Peaceful surroundings"
+    ],
+    "image": "https://i.ibb.co/6HsMVHs/riverside-retreat.jpg"
+  },
+
+  {
+    "estate_title": "Elegant Vineyard Estate",
+    "id": 14,
+    "segment_name": "Vineyard Estate",
+    "description": "Sophisticated vineyard estate set amidst rolling hills and vineyards. Offers luxurious accommodations, wine cellar, and breathtaking vineyard views.",
+    "price": 5000000,
+    "status": "sale",
+    "area": "7,000 sq ft",
+    "location": "Napa Valley, California",
+    "facilities": [
+      "Wine cellar",
+      "Breathtaking views",
+      "Luxurious accommodations"
+    ],
+    "image": "https://i.ibb.co/4MqrwNn/vineyard-estate.jpg"
+  }
+]

@@ -9,7 +9,6 @@ const EstateCard = ({ estate }) => {
     status,
     area,
     location,
-    facilities,
     image,
   } = estate;
   return (

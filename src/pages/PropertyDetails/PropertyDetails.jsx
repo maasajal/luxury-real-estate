@@ -1,4 +1,5 @@
 import { Link, useLoaderData, useParams } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 const PropertyDetails = () => {
   const { estate_title } = useParams();
@@ -20,6 +21,10 @@ const PropertyDetails = () => {
 
   return (
     <>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Property | {estate_title}</title>
+      </Helmet>
       <div className="max-w-6xl mx-auto px-4 md:px-3 lg:px-2">
         <div className="card card-compact my-32">
           <div className="text-center my-5">

@@ -1,4 +1,5 @@
 import { useLoaderData } from "react-router-dom";
+import { Helmet } from "react-helmet";
 import EstateCard from "../../components/EstateCard/EstateCard";
 import Banner from "../../components/Banner/Banner";
 
@@ -7,6 +8,10 @@ const Home = () => {
   console.log(realEstate);
   return (
     <>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Luxuria Palace | Home</title>
+      </Helmet>
       <div>
         <Banner realEstate={realEstate} />
       </div>

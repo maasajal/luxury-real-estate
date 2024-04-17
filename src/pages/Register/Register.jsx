@@ -1,4 +1,5 @@
 import { useContext, useState } from "react";
+import { Helmet } from "react-helmet";
 import { AuthContext } from "../../providers/AuthProvider";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
@@ -57,6 +58,10 @@ const Register = () => {
 
   return (
     <>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Luxuria Palace | Register</title>
+      </Helmet>
       <div className="max-w-6xl mx-auto px-4 md:px-3 lg:px-2">
         <div className="hero bg-base-200 my-36 rounded-xl">
           <div className="hero-content flex-col">

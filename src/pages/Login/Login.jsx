@@ -3,6 +3,7 @@ import { FaEye, FaEyeSlash, FaGithub } from "react-icons/fa";
 import { FcGoogle } from "react-icons/fc";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../providers/AuthProvider";
+import { Helmet } from "react-helmet";
 
 const Login = () => {
   const { logInUser, signInWithGoogle, signInWithGithub } =
@@ -56,6 +57,10 @@ const Login = () => {
 
   return (
     <div className="max-w-6xl mx-auto px-4 md:px-3 lg:px-2">
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Luxuria Palace | Login</title>
+      </Helmet>
       <div className="hero bg-base-200 my-36 rounded-xl">
         <div className="hero-content flex-col">
           <div className="text-center lg:text-left my-8">

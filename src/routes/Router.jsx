@@ -8,6 +8,7 @@ import PropertyDetails from "../pages/PropertyDetails/PropertyDetails";
 import PrivateRoute from "./PrivateRoute";
 import Contact from "../pages/Contact/Contact";
 import About from "../pages/About/About";
+import Properties from "../pages/Properties/Properties";
 
 const router = createBrowserRouter([
   {
@@ -28,6 +29,15 @@ const router = createBrowserRouter([
           </PrivateRoute>
         ),
         loader: () => fetch("../realEstate.json"),
+      },
+      {
+        path: "/properties",
+        element: (
+          <PrivateRoute>
+            <Properties />
+          </PrivateRoute>
+        ),
+        loader: () => fetch("../featuredProperties.json"),
       },
       {
         path: "/contact",

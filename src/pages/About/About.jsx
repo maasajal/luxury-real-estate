@@ -1,7 +1,13 @@
+import { Helmet } from "react-helmet";
 import aboutBanner from "../../assets/about.jpg";
+
 const About = () => {
   return (
     <div>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Luxuria Palace | About us</title>
+      </Helmet>
       <div
         className="hero"
         style={{
