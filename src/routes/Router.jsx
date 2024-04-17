@@ -9,6 +9,7 @@ import PrivateRoute from "./PrivateRoute";
 import Contact from "../pages/Contact/Contact";
 import About from "../pages/About/About";
 import Properties from "../pages/Properties/Properties";
+import UserProfile from "../pages/UserProfile/UserProfile";
 
 const router = createBrowserRouter([
   {
@@ -38,6 +39,14 @@ const router = createBrowserRouter([
           </PrivateRoute>
         ),
         loader: () => fetch("../featuredProperties.json"),
+      },
+      {
+        path: "user-profile",
+        element: (
+          <PrivateRoute>
+            <UserProfile />
+          </PrivateRoute>
+        ),
       },
       {
         path: "/contact",

@@ -95,12 +95,7 @@ const Navbar = () => {
                 className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-black"
               >
                 <li>
-                  <NavLink to="/user-profile">
-                    User Profile <span className="badge">New</span>
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink to="/update-profile">Update Profile</NavLink>
+                  <NavLink to="/user-profile">User Profile</NavLink>
                 </li>
               </ul>
             </div>

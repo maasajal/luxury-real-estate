@@ -70,7 +70,7 @@ const Login = () => {
             <form onSubmit={handleLogin} className="card-body">
               <div className="form-control">
                 <label className="label">
-                  <span className="label-text">Email address</span>
+                  <span className="label-text">Email address<span className="text-red-400">*</span></span>
                 </label>
                 <input
                   type="email"
@@ -82,7 +82,7 @@ const Login = () => {
               </div>
               <div className="form-control relative">
                 <label className="label">
-                  <span className="label-text">Password</span>
+                  <span className="label-text">Password<span className="text-red-400">*</span></span>
                 </label>
                 <input
                   type={showPassword ? "text" : "password"}

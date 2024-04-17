@@ -72,7 +72,7 @@ const Register = () => {
               <form onSubmit={handleRegister} className="card-body">
                 <div className="form-control">
                   <label className="label">
-                    <span className="label-text">Name</span>
+                    <span className="label-text">Name<span className="text-red-400">*</span></span>
                   </label>
                   <input
                     type="text"
@@ -91,12 +91,11 @@ const Register = () => {
                     placeholder="Enter your photo URL"
                     name="photoUrl"
                     className="input input-bordered"
-                    required
                   />
                 </div>
                 <div className="form-control">
                   <label className="label">
-                    <span className="label-text">Email</span>
+                    <span className="label-text">Email<span className="text-red-400">*</span></span>
                   </label>
                   <input
                     type="email"
@@ -108,7 +107,7 @@ const Register = () => {
                 </div>
                 <div className="form-control relative">
                   <label className="label">
-                    <span className="label-text">Password</span>
+                    <span className="label-text">Password<span className="text-red-400">*</span></span>
                   </label>
                   <input
                     type={showPassword ? "text" : "password"}
@@ -133,7 +132,7 @@ const Register = () => {
                   />
                   <label className="label" htmlFor="term">
                     <a href="" target="_blank" className="label-text">
-                      Accept Terms & Conditions
+                      Accept Terms & Conditions<span className="text-red-400">*</span>
                     </a>
                   </label>
                 </div>
