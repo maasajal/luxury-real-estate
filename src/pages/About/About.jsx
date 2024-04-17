@@ -17,18 +17,18 @@ const About = () => {
         <div className="hero-overlay bg-opacity-40"></div>
         <div className="hero-content text-center text-neutral-content py-48">
           <div className="max-w-xl">
-            <h1 className="mb-5 text-5xl font-bold">About Us</h1>
+            <h1 className="mb-5 text-5xl font-bold font-bebasNeue">About Us</h1>
             <p className="mb-5">
               Discover the story behind our passion for exceptional real estate.
               Learn more about our commitment to delivering unparalleled service
-              and luxury living experiences."
+              and luxury living experiences.
             </p>
           </div>
         </div>
       </div>
       <div className="my-24 max-w-6xl mx-auto">
         <div className="text-center my-8">
-          <h1 className="mb-5 text-5xl font-bold">Our Team</h1>
+          <h1 className="mb-5 text-5xl font-bold font-bebasNeue">Our Team</h1>
           <p>Team member details are coming soon...</p>
         </div>
         <p className="text-lg mb-4">

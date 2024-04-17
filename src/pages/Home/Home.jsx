@@ -2,10 +2,22 @@ import { useLoaderData } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import EstateCard from "../../components/EstateCard/EstateCard";
 import Banner from "../../components/Banner/Banner";
+import { useEffect, useState } from "react";
+import Reviews from "../../components/Reviews/Reviews";
 
 const Home = () => {
   const realEstate = useLoaderData();
-  console.log(realEstate);
+  const [reviews, setReviews] = useState([]);
+  // console.log(realEstate);
+  useEffect(() => {
+    const reviewData = async () => {
+      const res = await fetch("./reviews.json");
+      const data = await res.json();
+      setReviews(data);
+      console.log(data, reviews);
+    };
+    reviewData();
+  }, []);
   return (
     <>
       <Helmet>
@@ -32,6 +44,21 @@ const Home = () => {
           {realEstate.map((estate) => (
             <EstateCard key={estate.id} estate={estate} />
           ))}
+        </div>
+
+        <div className="mt-32 text-center max-w-xl mx-auto">
+          <h2 className="text-5xl font-bold font-bebasNeue">
+            What people say about us
+          </h2>
+          <p className="mt-5 leading-8">
+            Discover what our guests have to say about their unforgettable
+            experiences with Luxuria Palace - from stunning locations to
+            impeccable service, read our testimonials and join the chorus of
+            satisfied travelers.
+          </p>
+        </div>
+        <div className="py-20">
+          <Reviews feedback={reviews} />
         </div>
       </div>
     </>
