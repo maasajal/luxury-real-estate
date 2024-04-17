@@ -14,13 +14,11 @@ const UpdateProfile = () => {
   const user = auth.currentUser;
   const [name, setName] = useState("");
   const [photoURL, setPhotoURL] = useState("");
-  const [email, setEmail] = useState("");
 
   useEffect(() => {
     if (user !== null) {
       setName(user.displayName);
       setPhotoURL(user.photoURL);
-      setEmail(user.email);
     }
   }, [user]);
 

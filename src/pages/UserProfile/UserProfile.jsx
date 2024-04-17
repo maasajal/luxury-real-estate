@@ -19,7 +19,6 @@ const UserProfile = () => {
       setEmail(user.email);
     }
   }, [user]);
-  console.log(user, photoURL, name, email);
 
   return (
     <>
