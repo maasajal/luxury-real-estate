@@ -16,22 +16,22 @@ const Navbar = () => {
   };
   const navLinks = [
     <>
-      <li>
+      <li className="animate__animated animate__bounceInLeft animate__delay-2s">
         <NavLink to="/">Home</NavLink>
       </li>
-      <li>
+      <li className="animate__animated animate__bounceInLeft animate__delay-1s">
         <NavLink to="/properties">Properties</NavLink>
       </li>
-      <li>
+      <li className="animate__animated animate__bounceInLeft animate__fast">
         <NavLink to="/about">About Us</NavLink>
       </li>
-      <li>
+      <li className="animate__animated animate__bounceInLeft animate__faster">
         <NavLink to="/contact">Contact</NavLink>
       </li>
     </>,
   ];
   return (
-    <div className="navbar bg-transparent absolute top-0 left-0 z-10 text-green-300 font-semibold">
+    <div className="navbar bg-transparent absolute top-0 left-0 z-10 text-green-300 font-semibold animate__animated animate__fadeIn">
       <div className="navbar lg:max-w-6xl mx-auto px-3 md:px-5 flex flex-col lg:flex-row">
         <div className="lg:navbar-start">
           <div className="dropdown">
@@ -59,7 +59,7 @@ const Navbar = () => {
             </ul>
           </div>
           <a href="/" className="btn btn-ghost text-3xl font-bebasNeue">
-            <span className="text-green-400">Luxuria</span> Palace
+            <span className="text-green-400 animate__animated animate__pulse">Luxuria</span> Palace
           </a>
         </div>
         <div className="lg:navbar-end">
@@ -108,7 +108,7 @@ const Navbar = () => {
           ) : (
             <Link
               to="/login"
-              className="btn bg-green-400 px-6 border-none uppercase"
+              className="btn bg-green-400 px-6 border-none uppercase animate__animated animate__flash"
             >
               Login
             </Link>

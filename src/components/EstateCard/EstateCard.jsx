@@ -12,7 +12,7 @@ const EstateCard = ({ estate }) => {
     image,
   } = estate;
   return (
-    <div className="card card-compact bg-base-100 shadow-xl">
+    <div className="card card-compact bg-base-100 shadow-xl animate__animated animate__fadeInUpBig">
       <figure>
         <img src={image} alt={estate_title} />
       </figure>

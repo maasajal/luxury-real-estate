@@ -35,9 +35,9 @@ const Banner = ({ realEstate }) => {
               }}
             >
               <div className="hero-overlay bg-opacity-50"></div>
-              <div className="hero-content text-center text-white py-48">
+              <div className="hero-content text-center text-white py-48 animate__animated animate__fadeInUp">
                 <div className="max-w-3xl">
-                  <h1 className="mb-5 text-5xl font-bold font-bebasNeue">
+                  <h1 className="mb-5 text-5xl font-bold font-bebasNeue animate__animated animate__bounce">
                     {property.estate_title}{" "}
                   </h1>
                   <p className="mb-5">{property.description}</p>

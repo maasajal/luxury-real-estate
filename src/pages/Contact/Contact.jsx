@@ -25,8 +25,8 @@ const Contact = () => {
         <div className="hero-overlay bg-opacity-40"></div>
         <div className="hero-content text-center text-neutral-content py-48">
           <div className="max-w-xl">
-            <h1 className="mb-5 text-5xl font-bold font-bebasNeue">Contact Us</h1>
-            <p className="mb-5">
+            <h1 className="mb-5 text-5xl font-bold font-bebasNeue animate__animated animate__bounce">Contact Us</h1>
+            <p className="mb-5 animate__animated animate__fadeInUpBig">
               If you're interested in buying or renting any of our exquisite
               properties, please don't hesitate to reach out to us. Our
               dedicated team is here to assist you every step of the way, from
@@ -41,7 +41,7 @@ const Contact = () => {
         <div className="hero bg-base-200 pb-12 rounded-xl">
           <div>
             <div className="hero-content flex-col lg:flex-row-reverse">
-              <div className="my-12 bg-green-50 p-5 rounded-xl">
+              <div className="my-12 bg-green-50 p-5 rounded-xl animate__animated animate__zoomInUp">
                 <h3 className="text-2xl py-5">Another way to contact</h3>
                 <p>
                   <strong>Email: </strong>{" "}
@@ -70,7 +70,7 @@ const Contact = () => {
                   </li>
                 </ul>
               </div>
-              <div className="card shrink-0 w-full max-w-sm shadow-2xl bg-base-100 mb-6">
+              <div className="card shrink-0 w-full max-w-sm shadow-2xl bg-base-100 mb-6 animate__animated animate__zoomInUp">
                 <form
                   className="card-body"
                   onSubmit={handleSubmit((data) => {

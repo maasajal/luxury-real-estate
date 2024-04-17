@@ -69,7 +69,7 @@ const Register = () => {
               <h1 className="text-5xl font-bold">Register your account</h1>
             </div>
             <div className="card shrink-0 w-full max-w-sm shadow-2xl bg-base-100 mb-6">
-              <form onSubmit={handleRegister} className="card-body">
+              <form onSubmit={handleRegister} className="card-body animate__animated animate__zoomInUp">
                 <div className="form-control">
                   <label className="label">
                     <span className="label-text">Name<span className="text-red-400">*</span></span>
@@ -140,7 +140,7 @@ const Register = () => {
                   <button className="btn bg-green-400">Register</button>
                 </div>
               </form>
-              <div className="mb-5">
+              <div className="mb-5 animate__animated animate__wobble">
                 <label className="text-center">
                   <p className="label-text">
                     Already Have An Account?

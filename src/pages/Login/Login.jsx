@@ -67,7 +67,7 @@ const Login = () => {
             <h1 className="text-5xl font-bold">Login your property!</h1>
           </div>
           <div className="card shrink-0 w-full max-w-sm shadow-2xl bg-base-100 mb-12">
-            <form onSubmit={handleLogin} className="card-body">
+            <form onSubmit={handleLogin} className="card-body animate__animated animate__zoomInUp">
               <div className="form-control">
                 <label className="label">
                   <span className="label-text">Email address<span className="text-red-400">*</span></span>
@@ -102,7 +102,7 @@ const Login = () => {
                 <button className="btn bg-green-400">Login</button>
               </div>
             </form>
-            <div className="px-8 mb-6 flex flex-col justify-between gap-4">
+            <div className="px-8 mb-6 flex flex-col justify-between gap-4 animate__animated animate__zoomIn">
               <h2 className="text-3xl font-semibold">Login with: </h2>
               <button onClick={handleGoogleSignIn} className="btn btn-outline">
                 <FcGoogle className="text-2xl" /> Google
@@ -111,7 +111,7 @@ const Login = () => {
                 <FaGithub className="text-2xl" /> Github
               </button>
             </div>
-            <div className="mb-5">
+            <div className="mb-5 animate__animated animate__wobble">
               <label className="text-center">
                 <p className="label-text">
                   Don't Have An Account?

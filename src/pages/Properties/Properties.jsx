@@ -14,9 +14,9 @@ const Properties = () => {
       </Helmet>
       <Banner realEstate={featuredProperties} />
       <div className="max-w-6xl mx-auto px-4 md:px-3 lg:px-2">
-        <div className="text-center py-24 max-w-3xl mx-auto">
-          <h2 className="text-3xl font-bebasNeue">Featured Properties</h2>
-          <p className="py-5 leading-8">
+        <div className="text-center pt-24 max-w-3xl mx-auto">
+          <h2 className="text-3xl font-bebasNeue animate__animated animate__bounce">Featured Properties</h2>
+          <p className="py-5 leading-8 animate__animated animate__fadeInUpBig">
             Discover our curated selection of exquisite properties showcasing
             the epitome of luxury living. From oceanfront penthouses to mountain
             chalets, explore our handpicked collection of featured properties,

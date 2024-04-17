@@ -1,7 +1,7 @@
 const Footer = () => {
   return (
     <>
-      <footer className="p-10 bg-neutral text-neutral-content mt-28">
+      <footer className="p-10 bg-neutral text-neutral-content mt-28  animate__animated animate__fadeInDown">
         <div className="footer max-w-6xl mx-auto flex flex-wrap justify-between ">
           <nav>
             <h6 className="footer-title">Services</h6>
@@ -38,7 +38,7 @@ const Footer = () => {
           </form>
         </div>
       </footer>
-      <footer className="p-10 bg-neutral text-neutral-content">
+      <footer className="p-10 bg-neutral text-neutral-content animate__animated animate__fadeInDownBig">
         <div className="footer items-center max-w-6xl mx-auto">
           <aside>
             <p>

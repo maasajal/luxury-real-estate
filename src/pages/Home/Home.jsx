@@ -29,10 +29,10 @@ const Home = () => {
       </div>
       <div className="max-w-6xl mx-auto px-4 md:px-3 lg:px-2">
         <div className="mt-24 text-center max-w-xl mx-auto">
-          <h2 className="text-5xl font-bold font-bebasNeue">
+          <h2 className="text-5xl font-bold font-bebasNeue animate__animated animate__bounce">
             Property for sale
           </h2>
-          <p className="mt-5 leading-8">
+          <p className="mt-5 leading-8 animate__animated animate__fadeInUpBig">
             Discover an exclusive collection of properties meticulously curated
             for discerning buyers seeking unparalleled luxury and
             sophistication. From opulent beachfront mansions to secluded
@@ -47,10 +47,10 @@ const Home = () => {
         </div>
 
         <div className="mt-32 text-center max-w-xl mx-auto">
-          <h2 className="text-5xl font-bold font-bebasNeue">
+          <h2 className="text-5xl font-bold font-bebasNeue animate__animated animate__bounce">
             What people say about us
           </h2>
-          <p className="mt-5 leading-8">
+          <p className="mt-5 leading-8 animate__animated animate__fadeInUpBig">
             Discover what our guests have to say about their unforgettable
             experiences with Luxuria Palace - from stunning locations to
             impeccable service, read our testimonials and join the chorus of

@@ -33,7 +33,7 @@ const Reviews = ({ feedback }) => {
       >
         {feedback.map((review) => (
           <SwiperSlide key={review.id}>
-            <div className="card card-compact bg-base-100 shadow-xl">
+            <div className="card card-compact bg-base-100 shadow-xl animate__animated animate__zoomInUp">
               <figure>
                 <img
                   src={review.image}

@@ -17,7 +17,7 @@ const About = () => {
         <div className="hero-overlay bg-opacity-40"></div>
         <div className="hero-content text-center text-neutral-content py-48">
           <div className="max-w-xl">
-            <h1 className="mb-5 text-5xl font-bold font-bebasNeue">About Us</h1>
+            <h1 className="mb-5 text-5xl font-bold font-bebasNeue animate__animated animate__bounce">About Us</h1>
             <p className="mb-5">
               Discover the story behind our passion for exceptional real estate.
               Learn more about our commitment to delivering unparalleled service
@@ -28,10 +28,10 @@ const About = () => {
       </div>
       <div className="my-24 max-w-6xl mx-auto">
         <div className="text-center my-8">
-          <h1 className="mb-5 text-5xl font-bold font-bebasNeue">Our Team</h1>
+          <h1 className="mb-5 text-5xl font-bold font-bebasNeue animate__animated animate__bounce">Our Team</h1>
           <p>Team member details are coming soon...</p>
         </div>
-        <p className="text-lg mb-4">
+        <p className="text-lg mb-4 animate__animated animate__fadeInUpBig">
           Luxuria Palace is a premier real estate agency dedicated to providing
           exceptional service to clients seeking luxury properties worldwide.
           With our extensive network of agents and expertise in the luxury
@@ -40,7 +40,7 @@ const About = () => {
           renting, trust Luxuria Palace to deliver exceptional results and turn
           your real estate dreams into reality.
         </p>
-        <p className="text-lg">
+        <p className="text-lg animate__animated animate__fadeInUp">
           Contact us today to learn more about our services and discover the
           extraordinary properties we have to offer.
         </p>
