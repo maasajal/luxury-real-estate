@@ -3,6 +3,7 @@ import userPhoto from "../../assets/user.png";
 import { useContext } from "react";
 import { AuthContext } from "../../providers/AuthProvider";
 import { ToastContainer, toast } from "react-toastify";
+import './Navbar.css';
 
 const Navbar = () => {
   const { user, logOut } = useContext(AuthContext);
@@ -16,16 +17,16 @@ const Navbar = () => {
   };
   const navLinks = [
     <>
-      <li className="animate__animated animate__bounceInLeft animate__delay-2s">
+      <li key="home" className="animate__animated animate__bounceInLeft animate__delay-2s">
         <NavLink to="/">Home</NavLink>
       </li>
-      <li className="animate__animated animate__bounceInLeft animate__delay-1s">
+      <li key="properties" className="animate__animated animate__bounceInLeft animate__delay-1s">
         <NavLink to="/properties">Properties</NavLink>
       </li>
-      <li className="animate__animated animate__bounceInLeft animate__fast">
+      <li key="about" className="animate__animated animate__bounceInLeft animate__fast">
         <NavLink to="/about">About Us</NavLink>
       </li>
-      <li className="animate__animated animate__bounceInLeft animate__faster">
+      <li key="contact" className="animate__animated animate__bounceInLeft animate__faster">
         <NavLink to="/contact">Contact</NavLink>
       </li>
     </>,
@@ -89,10 +90,10 @@ const Navbar = () => {
               </div>
               <ul
                 tabIndex={0}
-                className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-black"
+                className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-green-300"
               >
                 <li>
-                  <NavLink to="/user-profile">User Profile</NavLink>
+                  <NavLink to="/user-profile" className="py-3">User Profile</NavLink>
                 </li>
               </ul>
             </div>

@@ -74,7 +74,7 @@ const Reviews = ({ feedback }) => {
                       type="radio"
                       name="rating-4"
                       className="mask mask-star-2 bg-green-500"
-                      checked
+                      defaultChecked
                     />
                   </div>
                 </div>

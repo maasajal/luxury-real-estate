@@ -14,9 +14,10 @@ const Home = () => {
       const res = await fetch("./reviews.json");
       const data = await res.json();
       setReviews(data);
-      console.log(data, reviews);
     };
-    reviewData();
+    return () => {
+      reviewData();
+    };
   }, []);
   return (
     <>
