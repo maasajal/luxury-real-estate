@@ -6,7 +6,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "./Navbar.css";
 
 const Navbar = () => {
-  const { user, logOut } = useContext(AuthContext);
+  const { user, logOut, loading } = useContext(AuthContext);
   const handleSignOut = () => {
     logOut()
       .then(() => {
@@ -86,23 +86,28 @@ const Navbar = () => {
           </div>
           {user && (
             <div className="dropdown dropdown-end mr-2">
-              <div
-                tabIndex={0}
-                role="button"
-                className="btn btn-ghost btn-circle avatar"
-              >
-                <div className="w-10 rounded-full">
-                  <img
-                    src={!user.photoURL ? userPhoto : user.photoURL}
-                    alt="Logged user photo"
-                    title={
-                      !user.displayName
-                        ? "User Name not found!"
-                        : user.displayName
-                    }
-                  />
+              {!loading ? (
+                <div
+                  tabIndex={0}
+                  role="button"
+                  className="btn btn-ghost btn-circle avatar"
+                >
+                  <div className="w-10 rounded-full">
+                    <img
+                      src={!user.photoURL ? userPhoto : user.photoURL}
+                      alt="Logged user photo"
+                      title={
+                        !user.displayName
+                          ? "User Name not found!"
+                          : user.displayName
+                      }
+                    />
+                  </div>
                 </div>
-              </div>
+              ) : (
+                <span className="loading loading-infinity loading-lg"></span>
+              )}
+
               <ul
                 tabIndex={0}
                 className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-green-300"
