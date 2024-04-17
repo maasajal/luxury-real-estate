@@ -5,6 +5,7 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
+import { updateProfile } from "firebase/auth";
 
 const Register = () => {
   const { createUser } = useContext(AuthContext);
@@ -42,8 +43,7 @@ const Register = () => {
       .then((result) => {
         const user = result.user;
         console.log(user);
-        user.displayName = name;
-        user.photoURL = photoUrl;
+        updateProfile(user, { displayName: name, photoURL: photoUrl });
         toast.success(
           `Welcome ${user.displayName ? user.displayName : user.email}`
         );
