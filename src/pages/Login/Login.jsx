@@ -1,5 +1,5 @@
-import { useContext } from "react";
-import { FaGithub } from "react-icons/fa";
+import { useContext, useState } from "react";
+import { FaEye, FaEyeSlash, FaGithub } from "react-icons/fa";
 import { FcGoogle } from "react-icons/fc";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../providers/AuthProvider";
@@ -9,6 +9,8 @@ const Login = () => {
     useContext(AuthContext);
   const location = useLocation();
   const navigate = useNavigate();
+
+  const [showPassword, setShowPassword] = useState(false);
 
   const handleLogin = (e) => {
     e.preventDefault();
@@ -73,17 +75,23 @@ const Login = () => {
                   required
                 />
               </div>
-              <div className="form-control">
+              <div className="form-control relative">
                 <label className="label">
                   <span className="label-text">Password</span>
                 </label>
                 <input
-                  type="password"
+                  type={showPassword ? "text" : "password"}
                   placeholder="Enter your password"
                   name="password"
                   className="input input-bordered"
                   required
                 />
+                <span
+                  className="absolute right-2 bottom-4"
+                  onClick={() => setShowPassword(!showPassword)}
+                >
+                  {!showPassword ? <FaEye /> : <FaEyeSlash />}
+                </span>
               </div>
               <div className="form-control mt-6">
                 <button className="btn bg-green-400">Login</button>

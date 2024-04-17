@@ -21,3 +21,9 @@ Luxuria Palace, is a comprehensive real estate platform tailored for luxury prop
 - Login with GitHub
 - Property sliders
 - View Property details for logged in user
+
+### NPM Packages (challenges task)
+
+- "animate.css": "^4.1.1",
+- "react-hook-form": "^7.51.3",
+- "swiper": "^11.1.1"

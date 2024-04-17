@@ -2,12 +2,16 @@ import { Link, NavLink } from "react-router-dom";
 import userPhoto from "../../assets/user.png";
 import { useContext } from "react";
 import { AuthContext } from "../../providers/AuthProvider";
+import { ToastContainer, toast } from "react-toastify";
 
 const Navbar = () => {
   const { user, logOut } = useContext(AuthContext);
   const handleSignOut = () => {
     logOut()
-      .then(() => console.log("LouOut"))
+      .then(() => {
+        toast.success("You have sign out successfully");
+        console.log("LouOut");
+      })
       .catch((error) => console.error(error));
   };
   const navLinks = [
@@ -58,8 +62,7 @@ const Navbar = () => {
             </ul>
           </div>
           <a href="/" className="btn btn-ghost text-3xl font-bebasNeue">
-            <span className="text-green-400">Luxuria</span>{" "}
-            Palace
+            <span className="text-green-400">Luxuria</span> Palace
           </a>
         </div>
         <div className="lg:navbar-end">
@@ -68,14 +71,14 @@ const Navbar = () => {
               {navLinks}
             </ul>
           </div>
-          <div className="dropdown dropdown-end mr-2">
-            <div
-              tabIndex={0}
-              role="button"
-              className="btn btn-ghost btn-circle avatar"
-            >
-              <div className="w-10 rounded-full">
-                {user ? (
+          {user && (
+            <div className="dropdown dropdown-end mr-2">
+              <div
+                tabIndex={0}
+                role="button"
+                className="btn btn-ghost btn-circle avatar"
+              >
+                <div className="w-10 rounded-full">
                   <img
                     src={!user.photoURL ? userPhoto : user.photoURL}
                     alt="Logged user photo"
@@ -85,31 +88,23 @@ const Navbar = () => {
                         : user.displayName
                     }
                   />
-                ) : (
-                  <img
-                    src={userPhoto}
-                    alt="Logged user photo"
-                    // title="Not logged in..."
-                    className="tooltip"
-                    data-tip="Not logged in..."
-                  />
-                )}
+                </div>
               </div>
+              <ul
+                tabIndex={0}
+                className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-black"
+              >
+                <li>
+                  <NavLink to="/user-profile">
+                    User Profile <span className="badge">New</span>
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink to="/update-profile">Update Profile</NavLink>
+                </li>
+              </ul>
             </div>
-            <ul
-              tabIndex={0}
-              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-black"
-            >
-              <li>
-                <NavLink to="/user-profile">
-                  User Profile <span className="badge">New</span>
-                </NavLink>
-              </li>
-              <li>
-                <NavLink to="/update-profile">Update Profile</NavLink>
-              </li>
-            </ul>
-          </div>
+          )}
           {user ? (
             <Link
               to="/"
@@ -128,6 +123,7 @@ const Navbar = () => {
           )}
         </div>
       </div>
+      <ToastContainer position="top-center" />
     </div>
   );
 };
