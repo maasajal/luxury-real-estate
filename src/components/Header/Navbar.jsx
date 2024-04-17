@@ -95,6 +95,9 @@ const Navbar = () => {
                 <li>
                   <NavLink to="/user-profile" className="py-3">User Profile</NavLink>
                 </li>
+                <li>
+                  <NavLink to="/update-profile" className="py-3">Update Profile</NavLink>
+                </li>
               </ul>
             </div>
           )}

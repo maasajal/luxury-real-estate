@@ -67,10 +67,15 @@ const Login = () => {
             <h1 className="text-5xl font-bold">Login your property!</h1>
           </div>
           <div className="card shrink-0 w-full max-w-sm shadow-2xl bg-base-100 mb-12">
-            <form onSubmit={handleLogin} className="card-body animate__animated animate__zoomInUp">
+            <form
+              onSubmit={handleLogin}
+              className="card-body animate__animated animate__zoomInUp"
+            >
               <div className="form-control">
                 <label className="label">
-                  <span className="label-text">Email address<span className="text-red-400">*</span></span>
+                  <span className="label-text">
+                    Email address<span className="text-red-400">*</span>
+                  </span>
                 </label>
                 <input
                   type="email"
@@ -82,7 +87,9 @@ const Login = () => {
               </div>
               <div className="form-control relative">
                 <label className="label">
-                  <span className="label-text">Password<span className="text-red-400">*</span></span>
+                  <span className="label-text">
+                    Password<span className="text-red-400">*</span>
+                  </span>
                 </label>
                 <input
                   type={showPassword ? "text" : "password"}

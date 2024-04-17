@@ -10,6 +10,7 @@ import Contact from "../pages/Contact/Contact";
 import About from "../pages/About/About";
 import Properties from "../pages/Properties/Properties";
 import UserProfile from "../pages/UserProfile/UserProfile";
+import UpdateProfile from "../pages/UpdateProfile/UpdateProfile";
 
 const router = createBrowserRouter([
   {
@@ -45,6 +46,14 @@ const router = createBrowserRouter([
         element: (
           <PrivateRoute>
             <UserProfile />
+          </PrivateRoute>
+        ),
+      },
+      {
+        path: "update-profile",
+        element: (
+          <PrivateRoute>
+            <UpdateProfile />
           </PrivateRoute>
         ),
       },
