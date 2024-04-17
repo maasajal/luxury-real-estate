@@ -57,7 +57,7 @@ const Home = () => {
             satisfied travelers.
           </p>
         </div>
-        <div className="py-20">
+        <div className="py-20 bg-green-50 rounded-xl mt-8">
           <Reviews feedback={reviews} />
         </div>
       </div>

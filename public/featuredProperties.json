@@ -9,7 +9,7 @@
     "area": "2,000 sq ft",
     "location": "New York City, New York",
     "facilities": ["Open-concept layout", "City views", "Modern amenities"],
-    "image": "https://i.ibb.co/7vpJ0tj/modern-city-loft.jpg"
+    "image": "https://i.ibb.co/4WL258w/luxury-resort-villa.jpg"
   },
 
   {
@@ -22,7 +22,7 @@
     "area": "1,500 sq ft",
     "location": "Cotswolds, England",
     "facilities": ["Rustic charm", "Scenic views", "Lush gardens"],
-    "image": "https://i.ibb.co/2cy0ZYq/countryside-cottage.jpg"
+    "image": "https://i.ibb.co/xFnnNJ8/tropical-resort-retreat.jpg"
   },
 
   {
@@ -35,7 +35,7 @@
     "area": "1,200 sq ft",
     "location": "San Francisco, California",
     "facilities": ["Contemporary design", "Modern amenities", "City living"],
-    "image": "https://i.ibb.co/dczGMBf/urban-chic-apartment.jpg"
+    "image": "https://i.ibb.co/ts0dCp2/mountain-chalet.jpg"
   },
 
   {
@@ -52,7 +52,7 @@
       "Expansive outdoor spaces",
       "Peaceful surroundings"
     ],
-    "image": "https://i.ibb.co/6HsMVHs/riverside-retreat.jpg"
+    "image": "https://i.ibb.co/K6TFDS2/beachfront-mansion.jpg"
   },
 
   {
@@ -69,6 +69,6 @@
       "Breathtaking views",
       "Luxurious accommodations"
     ],
-    "image": "https://i.ibb.co/4MqrwNn/vineyard-estate.jpg"
+    "image": "https://i.ibb.co/0XN4JXQ/lakefront-villa.jpg"
   }
 ]
